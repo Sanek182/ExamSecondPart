@@ -16,12 +16,22 @@
   border: 2px solid green;
 }
 
+.App-sections > div {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid green;
+}
+
 .CarsList
 .CarDetails
 .AddCarForm {
   margin: 20px;
   border: 2px solid green;
   padding: 20px;
+}
+
+.AddCarForm input {
+  margin-bottom: 10px;
 }
 
 .CarDetails img {
