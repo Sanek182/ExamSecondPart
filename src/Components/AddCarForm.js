@@ -16,7 +16,7 @@ function AddCarForm ({ onAdd }) {
     return (
         <div className="AddCarForm">
           <h3>Add New Car</h3>
-          <form onSubmit={handleAdd}>
+          <form onSubmit={handleAdd} style={{ display: 'flex', flexDirection: 'column' }}>
             <input name="name" value={car.name} onChange={handleChange} placeholder="Car name" required />
             <input name="price" value={car.price} onChange={handleChange} placeholder="Car price" required />
             <input name="img" value={car.img} onChange={handleChange} placeholder="Car image URL" required />
