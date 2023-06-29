@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import CarsList from './Components/CarsList';
 import CarDetails from './Components/CarDetails';
+import AddCarForm from './Components/AddCarForm';
 
 function App() {
   const [cars, setCars] = useState([
@@ -27,6 +28,7 @@ function App() {
       <div className="App-sections">
         <CarsList items={cars} onClick={setSelectedCar} />
         {selectedCar && <CarDetails item={selectedCar} />}
+        <AddCarForm onAdd={addCar} />
       </div>
     </div>
   );
