@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import CarsList from './Components/CarsList';
+import CarDetails from './Components/CarDetails';
 
 function App() {
   const [cars, setCars] = useState([
@@ -25,6 +26,7 @@ function App() {
       </div>
       <div className="App-sections">
         <CarsList items={cars} onClick={setSelectedCar} />
+        {selectedCar && <CarDetails item={selectedCar} />}
       </div>
     </div>
   );

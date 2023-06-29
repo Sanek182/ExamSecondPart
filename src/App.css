@@ -16,8 +16,15 @@
   border: 2px solid green;
 }
 
-.CarsList {
+.CarsList
+.CarDetails {
   margin: 20px;
   border: 2px solid green;
   padding: 20px;
+}
+
+.CarDetails img {
+  max-width: 200px;  
+  max-height: 200px;
+  object-fit: cover;
 }
